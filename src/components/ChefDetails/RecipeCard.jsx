@@ -19,7 +19,7 @@ const RecipeCard = ({ recipe }) => {
                 </ol>
                <p><span className='text-gray-100 text-xl mt-2'>Coking Method:</span> {cookingMethod}</p>
 
-               <button className='btn btn-accent bottom-0'>Favorite</button>
+               <button className='btn btn-accent bottom-0 mt-8'>Favorite</button>
             </div>
         </div>
 
