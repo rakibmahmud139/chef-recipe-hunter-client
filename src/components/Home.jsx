@@ -1,6 +1,11 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import ChefCard from './ChefCard';
 
 const Home = () => {
+
+    const chefs = useLoaderData();
+
     return (
         <div>
             <div className="carousel mx-auto">
@@ -36,8 +41,15 @@ const Home = () => {
 
 
             {/* chef info */}
+            <div className='grid grid-cols-3 gap-6 mt-24 ml-4 mr-4'>
+                {
+                    chefs.map(chef => <ChefCard
+                        key={chef._id}
+                        chef={chef}
+                    ></ChefCard>)
+                }
+            </div>
 
-            
         </div>
     );
 };
