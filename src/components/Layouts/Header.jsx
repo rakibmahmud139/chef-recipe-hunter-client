@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../../../public/chef.png';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -6,6 +7,7 @@ const Header = () => {
         <div>
             <div className="navbar bg-gray-200 shadow-2xl mx-auto">
                 <div className="flex-1">
+                <img className='w-8 h-8' src={img} alt="" />
                     <h3 className="btn btn-ghost normal-case text-3xl text-gray-900">
                         korean<span className='text-rose-400 text-4xl'>CHEF</span></h3>
                 </div>
