@@ -1,13 +1,16 @@
 import React from 'react';
+import img from '../../public/chef.png';
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-24">
+            <h3 className='text-3xl flex'>korean<span className='text-rose-400 text-4xl'>Chef</span></h3>
+            <img className='w-32 h-32' src={img} alt="" />
             <div className="grid grid-flow-col gap-4">
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
+                <a className="link link-hover">Recipe</a>
+                <a className="link link-hover">Our Chef</a>
             </div>
             <div>
                 <div className="grid grid-flow-col gap-4">

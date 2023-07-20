@@ -4,9 +4,9 @@
 
 
 .active {
-    @apply font-medium tracking-wide text-rose-900 transition-colors duration-200 hover:text-blue-400 mr-4
+    @apply font-medium tracking-wide text-rose-400 transition-colors duration-200 hover:text-blue-400 mr-4
 }
 
 .default {
-    @apply font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-rose-400 mr-4
+    @apply font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-cyan-400 mr-4
 }

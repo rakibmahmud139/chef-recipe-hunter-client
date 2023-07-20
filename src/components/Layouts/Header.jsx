@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <div className="navbar bg-cyan-600 shadow-2xl mx-auto">
+            <div className="navbar bg-gray-200 shadow-2xl mx-auto">
                 <div className="flex-1">
                     <h3 className="btn btn-ghost normal-case text-3xl text-gray-900">
                         korean<span className='text-rose-400 text-4xl'>CHEF</span></h3>
