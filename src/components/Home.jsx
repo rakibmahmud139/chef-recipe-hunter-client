@@ -11,7 +11,7 @@ const Home = () => {
 
   // Load foods data
   useEffect(() => {
-    fetch("http://localhost:5000/food")
+    fetch("https://chef-recipe-hunter-server-rakibmahmud139.vercel.app/food")
       .then((res) => res.json())
       .then((data) => setFoods(data))
       .catch((err) => {
