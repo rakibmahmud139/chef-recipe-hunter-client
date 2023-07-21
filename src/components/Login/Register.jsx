@@ -7,7 +7,7 @@ const Register = () => {
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
     //context
-    const { createUser, googleSignIn } = useContext(AuthContext);
+    const { createUser, googleSignIn, githubSignIn } = useContext(AuthContext);
 
 
 
@@ -45,12 +45,27 @@ const Register = () => {
     }
 
 
+
     // Google Sign in
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
                 const createdUser = result.user;
-                form.reset('');
+                setError('');
+                setSuccess('Register Successful');
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+    }
+
+
+
+    // Github Sign In
+    const handleGithubSignIn = () => {
+        githubSignIn()
+            .then(result => {
+                const createdUser = result.user;
                 setError('');
                 setSuccess('Register Successful');
             })
@@ -86,8 +101,13 @@ const Register = () => {
                 <p className='text-green-800 mt-4'>{success}</p>
             </form>
 
+
+            {/* Google Sign In */}
             <button onClick={handleGoogleSignIn} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mx-96 mt-4 bg-slate-300 text-gray-800 w-80"><FaGoogle className='text-blue-800 h-12 w-8' /> Login With Google</button>
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mx-96 mt-4 bg-slate-300 text-gray-800 w-80"><FaGithub className='text-green-900 h-12 w-8' /> Login With Github</button>
+
+
+            {/* Github Sign In */}
+            <button onClick={handleGithubSignIn} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mx-96 mt-4 bg-slate-300 text-gray-800 w-80"><FaGithub className='text-green-900 h-12 w-8' /> Login With Github</button>
         </div>
 
     );
