@@ -10,3 +10,5 @@
 .default {
     @apply font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-cyan-400 mr-4
 }
+
+
