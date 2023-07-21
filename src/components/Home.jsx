@@ -21,48 +21,89 @@ const Home = () => {
 
   return (
     <div>
-      <div className="carousel mx-auto">
-        <div id="slide1" className="carousel-item relative w-full">
+      <div className="mt-12 text-center text-xl">
+        <TypeAnimation
+          sequence={[
+            "KOREAN ",
+            2000,
+            "CUISINE IS LARGELY BASED ON RICE, VEGETABLES,",
+            2000,
+            "SEAFOOD AND MEATS. DAIRY IS LARGELY ABSENT FROM",
+            2000,
+            "THE TRADITIONAL KOREAN DIET, TRADITIONAL KOREAN MEALS ARE NAMED FOR THE NUMBER OF",
+            2000,
+            "SIDE DISHES THAT ACCOMPANY STEAM-COOKED SHORT-GRAIN RICE..",
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ fontSize: "2em", display: "inline-block" }}
+          repeat={Infinity}
+        />
+      </div>
+
+      <div className="carousel carousel-end rounded-box mt-12">
+        <div className="carousel-item">
           <img
+            className=" h-96 w-96"
             src="https://a.cdn-hotels.com/gdcs/production188/d1042/560f847f-c64a-4009-9422-1723c2739c36.jpg?impolicy=fcrop&w=800&h=533&q=medium"
-            className="w-full"
+            alt="Drink"
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full">
+        <div className="carousel-item">
           <img
-            src="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/11/15/asset/19b0de03aa06/sub-buzz-2304-1599838033-1.jpg?crop=1080:1080;0,0"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <img
+            className=" h-96 w-96"
             src="https://daebak.co/cdn/shop/articles/10-korean-food-facts-daebak-239860.jpg?v=1663736433"
-            className="w-full"
+            alt="Drink"
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
+        </div>
+        <div className="carousel-item">
+          <img
+            className=" h-96 w-96"
+            src="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/11/15/asset/19b0de03aa06/sub-buzz-2304-1599838033-1.jpg?crop=1080:1080;0,0"
+            alt="Drink"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className=" h-96 w-96"
+            src="https://img.etimg.com/photo/94809641/94809641.jpg"
+            alt="Drink"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className=" h-96 w-96"
+            src="https://a.cdn-hotels.com/gdcs/production50/d1916/51d76cc9-cbe8-4572-a671-545f882f1847.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+            alt="Drink"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className=" h-96 w-96"
+            src="https://img.theculturetrip.com/wp-content/uploads/2019/07/hwhxn4.jpg"
+            alt="Drink"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className=" h-96 w-96"
+            src="https://assets.vogue.in/photos/6103d492578ff515bee7dfba/2:3/w_2560%2Cc_limit/Korean%2520food%2520restaurants%2520in%2520India.jpg"
+            alt="Drink"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className=" h-96 w-96"
+            src="https://kellyloves.com/cdn/shop/articles/kimchi_ready_to_eat.jpg?v=1665059068&width=800"
+            alt="Drink"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className=" h-96 w-96"
+            src="https://www.mdis.edu.sg/blog/wp-content/uploads/2018/07/Korean-food-mdis.jpg"
+            alt="Drink"
+          />
         </div>
       </div>
 
