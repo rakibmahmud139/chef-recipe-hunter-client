@@ -3,6 +3,7 @@ import img from '../../../public/chef.png';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+    
     return (
         <div>
             <div className="navbar bg-gray-200 shadow-2xl mx-auto">
