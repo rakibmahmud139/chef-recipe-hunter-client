@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ChefCard from './ChefCard';
+import Food from './Food';
 
 const Home = () => {
+    const [foods, setFoods] = useState([]);
 
     const chefs = useLoaderData();
+
+
+    // Load foods data
+    useEffect(() => {
+        fetch('http://localhost:5000/food')
+            .then(res => res.json())
+            .then(data => setFoods(data))
+            .catch(err => {
+                console.log(err.message);
+            })
+    }, [])
 
     return (
         <div>
@@ -48,6 +61,21 @@ const Home = () => {
                         chef={chef}
                     ></ChefCard>)
                 }
+            </div>
+
+            <div className='mt-24 ml-20 mr-4'>
+                <div className='text-center'>
+                    <h3 className='text-5xl'>More Korean Foods</h3>
+                    <p className='mt-4'>There are some Korean food here. Kimchi, Bibimbap, Red rice cakes (tteokbokki), Bulgogi, Korean stew (jjigae), Jajangmyeon etc. Korean cuisine is largely based on rice, vegetables, seafood and (at least in South Korea) meats. Dairy is largely absent from the traditional Korean diet. Traditional Korean meals are named for the number of side dishes (반찬; 飯饌; banchan) that accompany steam-cooked short-grain rice...</p>
+                </div>
+                <div className='grid grid-cols-3 gap-8 mt-16'>
+                    {
+                        foods.map(food => <Food
+                            key={food.id}
+                            food={food}
+                        />)
+                    }
+                </div>
             </div>
 
         </div>

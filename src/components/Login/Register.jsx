@@ -75,6 +75,9 @@ const Register = () => {
     }
 
 
+    
+
+
     return (
         <div>
             <form onSubmit={handleToRegister} className='mx-96 mt-24 items-center'>
