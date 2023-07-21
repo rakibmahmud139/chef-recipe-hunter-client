@@ -7,7 +7,7 @@ const Register = () => {
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
     //context
-    const { createUser, googleSignIn, githubSignIn } = useContext(AuthContext);
+    const { createUser, googleSignIn, githubSignIn, setUser } = useContext(AuthContext);
 
 
 
@@ -19,7 +19,7 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-
+        
         setSuccess('');
 
         if (!/(?=.*[A-Z])/.test(password)) {
