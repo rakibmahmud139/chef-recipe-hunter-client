@@ -23,7 +23,10 @@ const Home = () => {
     <div>
       <div className="carousel mx-auto">
         <div id="slide1" className="carousel-item relative w-full">
-          <img src="/src/assets/image-1.jpg" className="w-full" />
+          <img
+            src="https://a.cdn-hotels.com/gdcs/production188/d1042/560f847f-c64a-4009-9422-1723c2739c36.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+            className="w-full"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">
               ❮
@@ -34,7 +37,10 @@ const Home = () => {
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img src="/src/assets/image-2.webp" className="w-full" />
+          <img
+            src="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/11/15/asset/19b0de03aa06/sub-buzz-2304-1599838033-1.jpg?crop=1080:1080;0,0"
+            className="w-full"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">
               ❮
@@ -45,7 +51,10 @@ const Home = () => {
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <img src="/src/assets/image-3.jpg" className="w-full" />
+          <img
+            src="https://daebak.co/cdn/shop/articles/10-korean-food-facts-daebak-239860.jpg?v=1663736433"
+            className="w-full"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-circle">
               ❮
