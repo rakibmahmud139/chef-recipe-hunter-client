@@ -90,8 +90,6 @@ const Home = () => {
       <div className="mt-24 mb-12 text-center">
         <TypeAnimation
           sequence={[
-            "L",
-            2000,
             "LET'S ",
             2000,
             "LET'S LUNCH",
