@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import img from "../../../public/chef.png";
+import img from "/chef.png";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { FaBars, FaTimes } from "react-icons/fa";
