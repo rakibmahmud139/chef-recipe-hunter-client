@@ -2,8 +2,8 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="mt-24 mr-96 ml-96 bg-gray-300 p-4 rounded-lg shadow-2xl">
-      <h3 className="text-3xl mb-2 mt-6 text-gray-900">
+    <div data-aos="flip-left" data-aos-duration="3000" className="mt-6 md:mt-24 md:mr-96 md:ml-96 bg-gray-300 p-4 rounded-lg shadow-2xl">
+      <h3 className="text-2xl md:text-3xl capitalize font-bold mb-2 mt-6 text-gray-900">
         Q1. Tell us the differences between uncontrolled and controlled
         components?
       </h3>
@@ -15,7 +15,7 @@ const Blog = () => {
         to insert or not and where to insert it.
       </p>
 
-      <h3 className="text-3xl mb-2 mt-6 text-gray-900">
+      <h3 className="text-2xl md:text-3xl font-bold mb-2 capitalize mt-6 text-gray-900">
         Q2. How to validate React props using PropTypes?
       </h3>
       <ol className="text-gray-900">
@@ -26,7 +26,7 @@ const Blog = () => {
         <p>4. Define the PropTypes for each prop.</p>
       </ol>
 
-      <h3 className="text-3xl mb-2 mt-6 text-gray-900">
+      <h3 className="text-2xl md:text-3xl font-bold capitalize mb-2 mt-6 text-gray-900">
         Q3. Tell us the difference between nodejs and express js?
       </h3>
       <p className="text-gray-900">
@@ -37,7 +37,7 @@ const Blog = () => {
         multi-user, real-time web service.
       </p>
 
-      <h3 className="text-3xl mb-2 mt-6 text-gray-900">
+      <h3 className="text-2xl md:text-3xl font-bold capitalize mb-2 mt-6 text-gray-900">
         Q4: What is a custom hook, and why will you create a custom hook?
       </h3>
       <p className="text-gray-900">

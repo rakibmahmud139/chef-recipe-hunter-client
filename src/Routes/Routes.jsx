@@ -4,9 +4,9 @@ import Home from "../components/Home";
 import ChefDetails from "../components/ChefDetails/ChefDetails";
 import Login from "../components/Login/Login";
 import Register from "../components/Login/Register";
-import Blog from "../components/Blog";
 import ErrorPage from "../components/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
+import Blog from "../components/Login/Blog";
 
 
 

@@ -3,6 +3,12 @@ import { useLoaderData } from "react-router-dom";
 import ChefCard from "./ChefCard";
 import Food from "./Food";
 import { TypeAnimation } from "react-type-animation";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
+
+
 
 const Home = () => {
   const [foods, setFoods] = useState([]);
@@ -21,7 +27,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="mt-12 text-center text-xl">
+      <div data-aos="flip-left" data-aos-duration="3000" className="mt-12 text-center text-sm lg:text-xl">
         <TypeAnimation
           sequence={[
             "KOREAN ",
@@ -41,7 +47,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="carousel carousel-end rounded-box mt-12">
+      <div data-aos="zoom-in-down" data-aos-duration="3000" className="carousel carousel-end rounded-box mt-12">
         <div className="carousel-item">
           <img
             className=" h-96 w-96"
@@ -107,8 +113,9 @@ const Home = () => {
         </div>
       </div>
 
+
       {/* chef info */}
-      <div className="grid grid-cols-3 gap-6 mt-24 ml-4 mr-4">
+      <div data-aos="fade-up" data-aos-duration="3000" className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-24 ml-4 mr-4">
         {chefs.map((chef) => (
           <ChefCard key={chef._id} chef={chef}></ChefCard>
         ))}
@@ -116,8 +123,8 @@ const Home = () => {
 
       {/* Food Section */}
 
-      <div className="mt-24 ml-20 mr-4">
-        <div className="text-center">
+      <div className="mt-24 lg:ml-20 mr-4">
+        <div data-aos="fade-right" data-aos-duration="3000" className="text-center">
           <h3 className="text-5xl">More Korean Foods</h3>
           <p className="mt-4">
             There are some Korean food here. Kimchi, Bibimbap, Red rice cakes
@@ -129,7 +136,7 @@ const Home = () => {
             short-grain rice...
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8 mt-16">
+        <div data-aos="fade-left" data-aos-duration="3000" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {foods.map((food) => (
             <Food key={food.id} food={food} />
           ))}
@@ -137,7 +144,7 @@ const Home = () => {
       </div>
 
       {/* Another Section */}
-      <div className="mt-24 mb-12 text-center">
+      <div data-aos="fade-down" data-aos-duration="3000" className="mt-24 mb-12 text-center">
         <TypeAnimation
           sequence={[
             "LET'S ",
@@ -156,7 +163,7 @@ const Home = () => {
           repeat={Infinity}
         />
       </div>
-      <div className="card glass w-3/4 ml-48">
+      <div data-aos="zoom-in-up" data-aos-duration="3000" className="card glass w-fit flex md:ml-16">
         <figure>
           <img
             className="mt-4 rounded"

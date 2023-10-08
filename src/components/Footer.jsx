@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-24">
             <h3 className='text-3xl flex'>korean<span className='text-rose-400 text-4xl'>Chef</span></h3>
             <img className='w-32 h-32' src={img} alt="" />
-            <div className="grid grid-flow-col gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
                 <a className="link link-hover">Recipe</a>
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © 2023 - All right reserved by KoreanChef</p>
             </div>
         </footer>
     );

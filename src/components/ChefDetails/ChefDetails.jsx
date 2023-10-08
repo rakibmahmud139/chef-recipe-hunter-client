@@ -9,8 +9,8 @@ const ChefDetails = () => {
     return (
         <div>
             <div className="card glass mt-8">
-                <figure><img className='w-3/6 h-96 pt-4 rounded-xl' src={chefImg} alt="car!" /></figure>
-                <div className="card-body">
+                <figure><img data-aos="zoom-in-left" data-aos-duration="3000" className='md:w-3/6 h-96 md:pt-4 rounded-xl' src={chefImg} alt="car!" /></figure>
+                <div data-aos="zoom-in-left" data-aos-duration="3000" className="card-body">
                     <h2 className="card-title"><span className='text-gray-900'>Name:</span> {chefName}</h2>
                     <p><span className='text-gray-900 text-xl'>Description:</span> {bio}</p>
                     <p><span className='text-gray-900 text-xl'>Likes:</span> {likes} like</p>
@@ -19,7 +19,7 @@ const ChefDetails = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-3 gap-4 ml-20 mt-24'>
+            <div data-aos="zoom-out-down" data-aos-duration="3000" className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:ml-20 mt-24'>
                 {
                     recipes.map(recipe => <RecipeCard
                         key={recipe.name}
